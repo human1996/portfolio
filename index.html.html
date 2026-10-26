@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Human Esmailli Ramos — Aeronautical & Space Engineer, CFA Level I & II passed. Derivatives Valuation, Market Risk & Quantitative Finance.">
+<meta property="og:title" content="Human Esmailli Ramos — Quantitative Finance">
+<meta property="og:description" content="Derivatives Valuation · Market Risk · Quantitative Finance. Interactive CV.">
+<title>Human Esmailli Ramos — Quantitative Finance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--kblue:#00338D;--kmed:#005EB8;--klight:#0091DA;--kpurple:#483698;--kteal:#00A3A1;--kdark:#0C233C;
+--bg:#ffffff;--bg2:#F3F6FB;--line:#DCE3EE;--text:#1A2433;--muted:#5B6B80;--radius:10px;--maxw:1160px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Manrope',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+html[lang="es"] .en{display:none!important} html[lang="en"] .es{display:none!important}
+a{color:inherit;text-decoration:none} ul{list-style:none}
+.wrap{width:min(var(--maxw),92%);margin-inline:auto}
+/* topbar */
+.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 8px rgba(0,51,141,.06)}
+.topbar .wrap{display:flex;align-items:center;gap:22px;height:66px}
+.logo{font-weight:800;font-size:1.35rem;color:var(--kblue);letter-spacing:-.02em}
+.logo span{color:var(--klight)}
+.lang{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.lang button{background:#fff;border:0;color:var(--muted);font:700 .72rem 'Manrope';padding:6px 11px;cursor:pointer}
+.lang button.active{background:var(--kblue);color:#fff}
+.topbar nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+.topbar nav a{font-size:.86rem;font-weight:600;color:var(--muted);padding:8px 11px;border-radius:6px;white-space:nowrap;transition:.2s}
+.topbar nav a:hover{color:var(--kblue);background:var(--bg2)}
+.topbar nav a.contact{background:var(--kblue);color:#fff;margin-left:8px}
+.topbar nav a.contact:hover{background:var(--kmed)}
+.menu-toggle{display:none;margin-left:auto;background:#fff;border:1px solid var(--line);color:var(--kblue);border-radius:6px;padding:6px 12px;font-size:1.1rem;cursor:pointer}
+/* hero */
+.hero-band{background:linear-gradient(120deg,var(--kblue) 0%,#0A2F7A 55%,var(--kpurple) 130%);color:#fff;position:relative;overflow:hidden}
+.hero-band::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.hero{display:grid;grid-template-columns:1.35fr .85fr;gap:56px;align-items:center;padding:80px 0 70px;position:relative;z-index:1}
+.pill{display:inline-block;font:600 .74rem 'DM Mono',monospace;letter-spacing:.04em;color:#fff;border:1px solid rgba(255,255,255,.35);padding:6px 13px;border-radius:4px;margin-bottom:24px}
+.hello{font-size:1.1rem;color:rgba(255,255,255,.8)}
+.profile-line{font:500 .84rem 'DM Mono',monospace;color:#8FD3F5;margin:4px 0 16px}
+h1{font-size:clamp(2.6rem,5.6vw,4.6rem);line-height:1.02;font-weight:800;letter-spacing:-.035em;margin-bottom:24px}
+h1 span{color:#8FD3F5}
+.intro{font-size:1.04rem;color:rgba(255,255,255,.88);max-width:620px;margin-bottom:20px}
+.location{font-size:.9rem;color:rgba(255,255,255,.75);margin-bottom:30px;display:flex;flex-wrap:wrap;gap:8px}
+.location em{font-style:normal;color:#fff;font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:6px;font-weight:700;font-size:.9rem;border:1.5px solid transparent;transition:.2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:#fff;color:var(--kblue)}
+.btn.primary:hover{background:#E6F0FB}
+.btn.linkedin{background:#0A66C2;color:#fff}
+.btn.cv{border-color:rgba(255,255,255,.5);color:#fff}
+.btn.cv:hover{background:rgba(255,255,255,.1)}
+/* profile card */
+.profile-card{background:#fff;color:var(--text);border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);overflow:hidden}
+.pc-head{background:var(--bg2);padding:26px 26px 20px;display:flex;gap:16px;align-items:center;border-bottom:1px solid var(--line)}
+.avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--kblue),var(--klight));color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.3rem;flex-shrink:0}
+.pc-head strong{display:block;font-size:1.08rem;color:var(--kblue)}
+.pc-head small{color:var(--muted);font-size:.84rem}
+.pc-body{padding:8px 26px 22px}
+.pc-row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.86rem}
+.pc-row:last-child{border:0}
+.pc-row span{color:var(--muted)} .pc-row b{color:var(--text);text-align:right}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-top:-36px;position:relative;z-index:2;box-shadow:0 10px 30px rgba(0,51,141,.08)}
+.stats article{padding:24px 26px;border-right:1px solid var(--line)}
+.stats article:last-child{border:0}
+.stats strong{display:block;font-size:1.45rem;font-weight:800;color:var(--kblue)}
+.stats span{color:var(--muted);font-size:.86rem}
+/* sections */
+.section{padding:84px 0;border-bottom:1px solid var(--line)}
+.section.alt{background:var(--bg2)}
+.section-label{font:600 .74rem 'DM Mono',monospace;letter-spacing:.14em;color:var(--kmed);margin-bottom:12px}
+h2{font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1.12;font-weight:800;letter-spacing:-.025em;color:var(--kblue)}
+h3{font-size:1.14rem;font-weight:700;color:var(--kdark);margin-bottom:6px}
+.two-col{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.two-col>div:first-child{position:sticky;top:100px}
+.copy p{color:#34445A;margin-bottom:16px}
+.copy strong{color:var(--kblue)}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.focus-grid div{background:#fff;border:1px solid var(--line);border-top:3px solid var(--kmed);border-radius:8px;padding:18px}
+.focus-grid div:nth-child(2){border-top-color:var(--kpurple)} .focus-grid div:nth-child(3){border-top-color:var(--kteal)}
+.focus-grid strong{display:block;color:var(--kblue);font-size:.93rem;margin-bottom:4px}
+.focus-grid span{color:var(--muted);font-size:.84rem}
+.section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:40px}
+.section-title>p{max-width:400px;color:var(--muted)}
+/* projects */
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;transition:.25s}
+.project:hover{box-shadow:0 12px 28px rgba(0,51,141,.1);border-color:var(--klight)}
+.project>span{font:600 .7rem 'DM Mono',monospace;color:var(--kmed);letter-spacing:.1em;margin-bottom:14px}
+.project p{color:var(--muted);font-size:.9rem;flex:1}
+.project.featured{background:var(--kblue);border-color:var(--kblue)}
+.project.featured h3,.project.featured p,.project.featured>span{color:#fff}
+.project.featured p{opacity:.85}
+.project.featured .chips b{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.25)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+.chips b{font:600 .7rem 'DM Mono',monospace;padding:4px 9px;border-radius:4px;background:#EAF2FB;border:1px solid #D2E3F5;color:var(--kmed)}
+/* timeline */
+.timeline article{display:grid;grid-template-columns:190px 1fr;gap:40px;padding:34px 0;border-bottom:1px solid var(--line)}
+.timeline article:first-child{padding-top:0}
+.timeline article:last-child{border:0}
+.year{font:600 .78rem 'DM Mono',monospace;color:var(--kmed);padding-top:5px}
+.year small{display:block;color:var(--muted);font-weight:500;margin-top:6px;line-height:1.5}
+.exp-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.exp-head h3{font-size:1.35rem;margin:0}
+.now{font:700 .66rem 'Manrope';letter-spacing:.08em;color:#fff;background:var(--kteal);padding:3px 8px;border-radius:4px}
+.role{color:var(--kpurple);font-weight:700;margin:4px 0 12px}
+.timeline p{color:#34445A}
+.scope{font:600 .7rem 'DM Mono',monospace!important;letter-spacing:.1em;color:var(--kmed)!important;margin:14px 0 4px}
+.timeline ul{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+.timeline li{position:relative;padding-left:20px;color:#3F4F64;font-size:.93rem}
+.timeline li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--klight)}
+.timeline li strong{color:var(--kdark)}
+.ex-group{margin-top:22px}
+.ex-group h4{font:700 .78rem 'Manrope';letter-spacing:.08em;text-transform:uppercase;color:var(--kblue);padding-bottom:6px;border-bottom:2px solid var(--kblue);display:inline-block}
+/* education */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.cards article{background:#fff;border:1px solid var(--line);border-left:4px solid var(--kblue);border-radius:8px;padding:22px}
+.cards span{font:600 .74rem 'DM Mono',monospace;color:var(--kmed)}
+.cards h3{margin-top:8px}
+.cards p{color:var(--muted);font-size:.89rem}
+/* certs */
+.cert-row{display:grid;grid-template-columns:1fr 1.2fr auto;align-items:center;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
+.cert-row strong{font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;color:var(--kblue)}
+.cert-row span{color:var(--muted)}
+.cert-row em{font:600 .76rem 'DM Mono',monospace;font-style:normal;color:var(--klight)}
+.document-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px}
+.document-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column}
+.document-card>span{font:600 .7rem 'DM Mono',monospace;color:var(--kmed);letter-spacing:.1em;margin-bottom:12px}
+.document-card p{color:var(--muted);font-size:.91rem;flex:1}
+.featured-doc{border-top:4px solid var(--kteal)}
+.doc-meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0;font-size:.84rem}
+.doc-meta b{color:var(--kdark)} .doc-meta span{color:var(--muted)} .doc-meta span::before{content:"· "}
+.doc-link{align-self:flex-start;font-weight:700;color:var(--kmed);border-bottom:2px solid var(--klight)}
+/* skills */
+.skills{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+.skill-group{margin-bottom:30px}
+.skill-group h4{font:700 .78rem 'Manrope';letter-spacing:.08em;text-transform:uppercase;color:var(--kblue);margin-bottom:6px}
+.skill-row{display:grid;grid-template-columns:210px 1fr;gap:20px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.skill-row strong{color:var(--kdark);font-size:.94rem}
+.skill-row strong small{display:block;color:var(--muted);font-weight:500;font-size:.78rem}
+.skill-row>span{color:#3F4F64;font-size:.9rem}
+.lvl{display:flex;align-items:center;gap:14px}
+.bar{flex:1;height:6px;background:#E3E9F2;border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--kblue),var(--klight))}
+.lvl em{font:600 .74rem 'DM Mono',monospace;font-style:normal;color:var(--kmed);width:100px;text-align:right}
+/* contact */
+.contact-section{margin:70px auto;padding:60px 50px;border-radius:12px;text-align:center;background:linear-gradient(120deg,var(--kblue),var(--kpurple));color:#fff}
+.contact-section .section-label{color:#8FD3F5}
+.contact-section h2{color:#fff;font-size:clamp(2.2rem,4.5vw,3.4rem);margin-bottom:12px}
+.contact-section>p:not(.section-label){color:rgba(255,255,255,.85);max-width:580px;margin:0 auto 28px}
+.contact-section .actions{justify-content:center}
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:26px 0 36px;font-size:.8rem;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media print{.topbar,.actions{display:none}.reveal{opacity:1;transform:none}}
+@media (max-width:1100px){.topbar nav a{padding:8px 7px;font-size:.8rem}}
+@media (max-width:960px){
+ .menu-toggle{display:block}
+ .topbar nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid var(--line);padding:10px 4% 16px}
+ .topbar nav.open{display:flex} .topbar nav a.contact{margin:8px 0 0;text-align:center}
+ .hero{grid-template-columns:1fr;gap:40px;padding-top:50px}
+ .two-col,.skills{grid-template-columns:1fr;gap:28px} .two-col>div:first-child{position:static}
+ .project-grid{grid-template-columns:repeat(2,1fr)}
+ .stats{grid-template-columns:repeat(2,1fr)} .stats article:nth-child(2){border-right:0} .stats article:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .section-title{flex-direction:column;align-items:flex-start;gap:14px}
+}
+@media (max-width:640px){
+ .stats,.project-grid,.cards,.document-grid,.focus-grid{grid-template-columns:1fr}
+ .stats article{border-right:0;border-bottom:1px solid var(--line)}
+ .timeline article{grid-template-columns:1fr;gap:8px}
+ .skill-row{grid-template-columns:1fr;gap:6px}
+ .cert-row{grid-template-columns:1fr auto} .cert-row span{grid-column:1} .cert-row em{grid-row:1;grid-column:2}
+ .section{padding:60px 0} .contact-section{padding:44px 22px} .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="logo" href="#inicio">HE<span>.</span></a>
+  <div class="lang"><button class="active">ES</button><button>EN</button></div>
+  <nav>
+    <a href="#sobre-mi"><span class="es">Sobre mí</span><span class="en">About</span></a>
+    <a href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a>
+    <a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a>
+    <a href="#educacion"><span class="es">Educación</span><span class="en">Education</span></a>
+    <a href="#certificaciones"><span class="es">Certificaciones</span><span class="en">Certifications</span></a>
+    <a href="#habilidades"><span class="es">Habilidades</span><span class="en">Skills</span></a>
+    <a href="#" data-cv="es" target="_blank" rel="noopener" class="es">CV</a><a href="#" data-cv="en" target="_blank" rel="noopener" class="en">CV</a>
+    <a class="contact" href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+  </nav>
+</div></header>
+
+<main id="inicio">
+<div class="hero-band"><section class="hero wrap">
+  <div>
+    <div class="pill">Derivatives Valuation · Market Risk · Quantitative Finance</div>
+    <p class="hello"><span class="es">Hola, soy Human Esmailli Ramos.</span><span class="en">Hi, I'm Human Esmailli Ramos.</span></p>
+    <p class="profile-line">Senior Quantitative Analyst · Derivatives Valuation &amp; Market Risk</p>
+    <h1>Senior<br>Quantitative<br><span>Analyst.</span></h1>
+    <p class="intro"><span class="es">Senior Consultant en el Financial Instruments Group de KPMG, en el área de valoración de derivados del Financial Sector. Ingeniero Aeronáutico y del Espacio (UPM) y CFA Level I y II aprobados, con experiencia en valoración de instrumentos financieros, riesgo de mercado y trading cuantitativo.</span><span class="en">Senior Consultant in KPMG's Financial Instruments Group, within the derivatives valuation area of the Financial Sector. Aeronautical and Space Engineer (UPM) with CFA Level I and II passed, experienced in financial instrument valuation, market risk and quantitative trading.</span></p>
+    <div class="location"><span>Madrid, España</span><span>·</span><em><span class="es">Disponible para oportunidades internacionales</span><span class="en">Open to international opportunities</span></em></div>
+    <div class="actions">
+      <a class="btn primary" href="#experiencia"><span class="es">Ver experiencia</span><span class="en">View experience</span> ↗</a>
+      <a class="btn linkedin" href="https://www.linkedin.com/in/humanesmailli" target="_blank" rel="noopener">in&nbsp; LinkedIn ↗</a>
+      <a class="btn cv es" href="#" data-cv="es" target="_blank" rel="noopener">📄&nbsp; Ver CV (PDF)</a><a class="btn cv en" href="#" data-cv="en" target="_blank" rel="noopener">📄&nbsp; View CV (PDF)</a>
+    </div>
+  </div>
+  <div class="profile-card">
+    <div class="pc-head"><div class="avatar">HE</div><div><strong>Human Esmailli Ramos</strong><small>Senior Consultant · KPMG</small></div></div>
+    <div class="pc-body">
+      <div class="pc-row"><span><span class="es">Área</span><span class="en">Area</span></span><b>Financial Instruments Group</b></div>
+      <div class="pc-row"><span><span class="es">Especialidad</span><span class="en">Focus</span></span><b><span class="es">Valoración de derivados</span><span class="en">Derivatives valuation</span></b></div>
+      <div class="pc-row"><span><span class="es">Formación</span><span class="en">Education</span></span><b><span class="es">Ing. Aeronáutica y del Espacio</span><span class="en">Aeronautical &amp; Space Eng.</span></b></div>
+      <div class="pc-row"><span>CFA</span><b><span class="es">Level I y II aprobados</span><span class="en">Level I &amp; II passed</span></b></div>
+      <div class="pc-row"><span><span class="es">Programación</span><span class="en">Programming</span></span><b>Python · C# · SQL · VBA</b></div>
+      <div class="pc-row"><span><span class="es">Idiomas</span><span class="en">Languages</span></span><b><span class="es">Español · Inglés (avanzado)</span><span class="en">Spanish · English (advanced)</span></b></div>
+      <div class="pc-row"><span><span class="es">Oficina</span><span class="en">Office</span></span><b>Madrid</b></div>
+    </div>
+  </div>
+</section></div>
+
+<section class="wrap stats">
+  <article><strong>KPMG</strong><span>Financial Instruments · <span class="es">Valoración</span><span class="en">Valuation</span></span></article>
+  <article><strong>SanCap</strong><span><span class="es">Riesgo de mercado · delta/vega</span><span class="en">Market risk · delta/vega</span></span></article>
+  <article><strong>Quant Trader</strong><span><span class="es">Estrategias sistemáticas · 2020–2023</span><span class="en">Systematic strategies · 2020–2023</span></span></article>
+  <article><strong>CFA</strong><span><span class="es">Level I y II aprobados</span><span class="en">Level I &amp; II passed</span></span></article>
+</section>
+
+<section id="sobre-mi" class="section wrap two-col">
+  <div><p class="section-label">01 — <span class="es">SOBRE MÍ</span><span class="en">ABOUT ME</span></p><h2>Financial markets.<br>Quantitative expertise.</h2></div>
+  <div class="copy">
+    <p><span class="es">Soy <strong>Ingeniero Aeronáutico y del Espacio</strong> por la Universidad Politécnica de Madrid y he aprobado los niveles I y II del <strong>CFA</strong>, con una trayectoria centrada en la intersección entre mercados financieros, modelización cuantitativa y análisis de riesgo.</span><span class="en">I am an <strong>Aeronautical and Space Engineer</strong> from the Polytechnic University of Madrid and have passed <strong>CFA</strong> Levels I and II, with a career focused on the intersection of financial markets, quantitative modelling and risk analysis.</span></p>
+    <p><span class="es">Desde marzo de 2024 formo parte del <strong>Financial Instruments Group de KPMG España</strong>, en el área de valoración de derivados del Financial Sector. Valoro instrumentos complejos, desarrollo y evalúo enfoques de valoración alternativos, reviso ajustes de valoración y outputs de modelos, y desarrollo soluciones de riesgo y automatización.</span><span class="en">Since March 2024 I have been part of <strong>KPMG Spain's Financial Instruments Group</strong>, in the derivatives valuation area of the Financial Sector. I value complex instruments, develop and assess alternative valuation approaches, review valuation adjustments and model outputs, and build risk and automation solutions.</span></p>
+    <p><span class="es">Antes operé acciones, materias primas y derivados sobre índices mediante <strong>estrategias automatizadas basadas en métodos cuantitativos</strong>, diseñando estrategias y construyendo carteras según objetivos de rentabilidad/riesgo. Programo en Python (numpy, pandas), C#, SQL y VBA, y tengo conocimientos de Machine Learning.</span><span class="en">Previously I traded equities, commodities and index derivatives using <strong>automated strategies based on quantitative methods</strong>, designing strategies and building portfolios according to return/risk objectives. I code in Python (numpy, pandas), C#, SQL and VBA, and have working knowledge of Machine Learning.</span></p>
+    <div class="focus-grid">
+      <div><strong>Derivatives Valuation</strong><span><span class="es">Modelos de valoración, productos estructurados y validación metodológica.</span><span class="en">Valuation models, structured products and methodology validation.</span></span></div>
+      <div><strong>Market Risk</strong><span><span class="es">Sensibilidades delta/vega, escenarios hipotéticos y requisitos regulatorios.</span><span class="en">Delta/vega sensitivities, hypothetical scenarios and regulatory requirements.</span></span></div>
+      <div><strong>Quantitative Finance</strong><span><span class="es">Estrategias sistemáticas, carteras automatizadas y análisis rentabilidad/riesgo.</span><span class="en">Systematic strategies, automated portfolios and return/risk analysis.</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="section alt"><div class="wrap">
+  <div class="section-title"><div><p class="section-label">02 — <span class="es">TRABAJO SELECCIONADO</span><span class="en">SELECTED WORK</span></p><h2><span class="es">Problemas reales.<br>Soluciones cuantitativas.</span><span class="en">Real problems.<br>Quantitative solutions.</span></h2></div>
+  <p><span class="es">Áreas de trabajo que reflejan mi experiencia entre valoración, riesgo, mercados y automatización.</span><span class="en">Areas of work reflecting my experience across valuation, risk, markets and automation.</span></p></div>
+  <div class="project-grid"><article class="project featured"><span>01 / DERIVATIVES</span><h3>Derivatives Valuation</h3><p><span class="es">Valoración de IRS, derivados de FX, commodities, inflation swaps, caps/floors, cross-currency swaps, opciones exóticas y otros productos estructurados, validando las metodologías aplicadas.</span><span class="en">Valuation of IRS, FX derivatives, commodities, inflation swaps, caps/floors, cross-currency swaps, exotic options and other structured products, validating the methodologies applied.</span></p><div class="chips"><b>IRS</b><b>FX</b><b>CCS</b><b>Caps/Floors</b><b>Exotics</b></div></article><article class="project "><span>02 / VALUATION</span><h3>Pricing Methodologies</h3><p><span class="es">Desarrollo y evaluación de enfoques alternativos —Black-Scholes, Monte Carlo y árboles binomiales— según el instrumento y sus risk drivers.</span><span class="en">Development and assessment of alternative approaches — Black-Scholes, Monte Carlo and binomial trees — depending on the instrument and its risk drivers.</span></p><div class="chips"><b>Black-Scholes</b><b>Monte Carlo</b><b>Binomial</b></div></article><article class="project "><span>03 / MARKET RISK</span><h3>Risk Analytics · SanCap</h3><p><span class="es">Analítica de riesgo en Python para Santander US Capital Markets: sensibilidades delta/vega para requisitos de la Federal Reserve, escenarios hipotéticos y automatización vía BatchCal API + PolyPath.</span><span class="en">Python risk analytics for Santander US Capital Markets: delta/vega sensitivities for Federal Reserve requirements, hypothetical scenarios and automation via BatchCal API + PolyPath.</span></p><div class="chips"><b>Python</b><b>Delta</b><b>Vega</b><b>Fed</b></div></article><article class="project "><span>04 / MODEL REVIEW</span><h3>Fair Value Review</h3><p><span class="es">Revisión de ajustes de valoración y outputs de modelos: razonabilidad de supuestos, inputs, calibración y decisiones metodológicas.</span><span class="en">Review of valuation adjustments and model outputs: reasonableness of assumptions, inputs, calibration and methodological choices.</span></p><div class="chips"><b>Fair value</b><b>Calibration</b><b>Model review</b></div></article><article class="project "><span>05 / QUANT TRADING</span><h3>Systematic Strategies & Portfolios</h3><p><span class="es">Diseño de estrategias trend following, mean reversion, ORB, VBO y de patrones, y construcción de carteras según objetivos de rentabilidad/riesgo.</span><span class="en">Design of trend following, mean reversion, ORB, VBO and pattern strategies, and portfolio construction according to return/risk objectives.</span></p><div class="chips"><b>Systematic</b><b>Portfolio</b><b>Position sizing</b></div></article><article class="project "><span>06 / AUTOMATION</span><h3>Regulatory Automation</h3><p><span class="es">Automatización en C# de la generación de XML desde Excel para optimizar el proceso de validación requerido por la CNMV.</span><span class="en">C# automation of XML generation from Excel to optimise the validation process required by the CNMV.</span></p><div class="chips"><b>C#</b><b>Excel</b><b>CNMV</b></div></article></div>
+</div></section>
+
+<section id="experiencia" class="section wrap">
+  <div class="section-title"><div><p class="section-label">03 — <span class="es">EXPERIENCIA</span><span class="en">EXPERIENCE</span></p><h2><span class="es">Experiencia profesional.</span><span class="en">Professional experience.</span></h2></div></div>
+  <div class="timeline">
+    <article><div class="year">MAR 2024 — <span class="es">ACTUAL</span><span class="en">PRESENT</span><small>Madrid · Financial Sector</small></div><div>
+      <div class="exp-head"><h3>KPMG España</h3><span class="now"><span class="es">ACTUAL</span><span class="en">CURRENT</span></span></div>
+      <p class="role">Senior Consultant · Financial Instruments Group — Derivatives Valuation</p>
+      <p><span class="es">Formo parte del Financial Instruments Group de KPMG, dentro del Financial Sector, especializado en la valoración de instrumentos financieros y derivados. Mi trabajo combina análisis financiero y cuantitativo, revisión y challenge de metodologías, valoración de productos complejos y desarrollo de soluciones de riesgo y automatización.</span><span class="en">I am part of KPMG's Financial Instruments Group, within the Financial Sector, specialised in the valuation of financial instruments and derivatives. My work combines financial and quantitative analysis, methodology review and challenge, valuation of complex products and development of risk and automation solutions.</span></p>
+      <p class="scope">DERIVATIVES · VALUATION · MARKET RISK · AUTOMATION</p>
+      <div class="ex-group"><h4><span class="es">Valoración y metodología</span><span class="en">Valuation &amp; methodology</span></h4><ul><li><span class="es"><strong>Valoración de derivados</strong>: IRS, derivados de FX, commodities, inflation swaps, caps/floors, cross-currency swaps, opciones exóticas y otros productos estructurados, con un fuerte foco en entender, cuestionar y validar las metodologías de valoración aplicadas.</span><span class="en"><strong>Valuation of derivative products</strong>: IRS, FX derivatives, commodities, inflation swaps, caps/floors, cross-currency swaps, exotic options and other structured products, with a strong focus on understanding, challenging and validating the valuation methodologies applied.</span></li><li><span class="es"><strong>Desarrollo y evaluación de enfoques de valoración alternativos</strong>: modelos Black-Scholes, técnicas de simulación Monte Carlo e implementaciones de árboles binomiales, en función de las características del instrumento y de sus risk drivers relevantes.</span><span class="en"><strong>Development and assessment of alternative valuation approaches</strong>, including Black-Scholes models, Monte Carlo simulation techniques and binomial tree implementations, depending on the characteristics of the financial instrument and relevant risk drivers.</span></li><li><span class="es"><strong>Revisión de ajustes de valoración y outputs de modelos</strong>: evaluación de la razonabilidad de supuestos, inputs, enfoques de calibración y decisiones metodológicas utilizadas en la medición del valor razonable.</span><span class="en"><strong>Review of valuation adjustments and model outputs</strong>, assessing the reasonableness of assumptions, inputs, calibration approaches and methodological choices used in fair value measurements.</span></li></ul><div class="chips"><b>IRS</b><b>FX</b><b>Inflation swaps</b><b>CCS</b><b>Caps/Floors</b><b>Exotics</b><b>Black-Scholes</b><b>Monte Carlo</b><b>Binomial trees</b><b>Fair value</b></div></div>
+      <div class="ex-group"><h4><span class="es">Riesgo de mercado y automatización</span><span class="en">Market risk &amp; automation</span></h4><ul><li><span class="es"><strong>Analítica de riesgo en Python para Santander US Capital Markets (SanCap)</strong>, con foco en el análisis de sensibilidades delta y vega para cumplir los requisitos de riesgo de mercado de la Federal Reserve.</span><span class="en"><strong>Developed Python-based risk analytics for Santander US Capital Markets (SanCap)</strong>, with a strong focus on delta and vega sensitivity analysis to meet Federal Reserve market-risk requirements.</span></li><li><span class="es">Desarrollo de scripts para calcular sensibilidades de riesgo a nivel cartera bajo escenarios hipotéticos.</span><span class="en">Built scripts to compute portfolio-level risk sensitivities under hypothetical scenarios.</span></li><li><span class="es">Automatización de workflows de riesgo de mercado mediante la <strong>BatchCal API</strong>, integrada con <strong>PolyPath</strong>.</span><span class="en">Automated market-risk workflows via the <strong>BatchCal API</strong>, integrated with <strong>PolyPath</strong>.</span></li><li><span class="es"><strong>Automatización de la generación de ficheros XML</strong> desde Excel mediante C#, optimizando el proceso de validación requerido por la CNMV (Comisión Nacional del Mercado de Valores).</span><span class="en"><strong>Automation of XML file generation</strong> from Excel spreadsheets using C#, optimising the validation process required by the CNMV (Spanish Securities Market Commission).</span></li></ul><div class="chips"><b>Python</b><b>Delta</b><b>Vega</b><b>BatchCal API</b><b>PolyPath</b><b>C#</b><b>XML</b><b>CNMV</b></div></div>
+      <div class="ex-group"><h4><span class="es">Coordinación de equipos</span><span class="en">Team coordination</span></h4><ul><li><span class="es"><strong>Coordinación y supervisión de equipos de 2–3 personas</strong>: asignación de tareas, revisión del trabajo realizado, seguimiento del progreso y aseguramiento de la consistencia y calidad de los entregables.</span><span class="en"><strong>Coordination and supervision of small working teams of two to three people</strong>: assigning tasks, reviewing work performed, monitoring progress and ensuring the consistency and quality of the deliverables prepared by the team.</span></li></ul></div>
+    </div></article>
+    <article><div class="year">2020 — 2023</div><div>
+      <h3>QuantumChain Dynamics</h3>
+      <p class="role">Quantitative Trader</p>
+      <p><span class="es">Operador de acciones, materias primas y derivados sobre índices mediante estrategias automatizadas basadas en métodos cuantitativos.</span><span class="en">Trader in equities, commodities and index derivatives using automated strategies based on quantitative methods.</span></p>
+      <ul><li><span class="es"><strong>Diseño y evaluación de estrategias</strong> trend following, mean reversion, opening range breakout (ORB), volatility breakout (VBO) y de patrones, en distintos marcos temporales intradía y swing.</span><span class="en"><strong>Design and evaluation</strong> of trend following, mean reversion, opening range breakout (ORB), volatility breakout (VBO) and pattern strategies, across different intraday and swing time frames.</span></li><li><span class="es"><strong>Construcción y balanceo de carteras de estrategias automatizadas</strong>, considerando distintos objetivos de rentabilidad/riesgo en un horizonte temporal dado y las características de un determinado tipo de inversor.</span><span class="en"><strong>Construction and balancing of automated strategy portfolios</strong>, considering different return/risk objectives over a given time horizon and the characteristics of a certain type of investor.</span></li><li><span class="es">Gestión monetaria y position sizing: Kelly, F-Óptima, Secure-F y Ratio Fijo.</span><span class="en">Money management and position sizing: Kelly, Optimal-f, Secure-f and Fixed Ratio.</span></li><li><span class="es">Modelos de valoración, IPV, FVA/AVA, IRC y VaR.</span><span class="en">Valuation models, IPV, FVA/AVA, IRC and VaR.</span></li></ul><div class="chips"><b>Trend following</b><b>Mean reversion</b><b>ORB</b><b>VBO</b><b>Portfolio construction</b><b>VaR</b></div>
+    </div></article>
+    <article><div class="year">2019</div><div>
+      <h3>Universidad Politécnica de Madrid</h3>
+      <p class="role"><span class="es">Departamento de Matemáticas Aplicadas a la Ingeniería Aeroespacial</span><span class="en">Department of Applied Mathematics for Aerospace Engineering</span></p>
+      <p><span class="es">Estudio de la viabilidad de diferentes estrategias especulativas aplicables a un mercado de opciones, con Black-Scholes, árboles binomiales y simulación Monte Carlo implementados en Python.</span><span class="en">Feasibility study of different speculative strategies applicable to an options market, using Black-Scholes, binomial trees and Monte Carlo simulation implemented in Python.</span></p>
+      <div class="chips"><b>Options</b><b>Black-Scholes</b><b>Monte Carlo</b><b>Python</b></div>
+    </div></article>
+  </div>
+</section>
+
+<section id="educacion" class="section alt"><div class="wrap two-col">
+  <div><p class="section-label">04 — <span class="es">EDUCACIÓN</span><span class="en">EDUCATION</span></p><h2><span class="es">Formación técnica<br>y financiera.</span><span class="en">Technical and<br>financial education.</span></h2></div>
+  <div class="cards">
+    <article><span>2014 — 2019</span><h3>Universidad Politécnica de Madrid</h3><p><span class="es">Grado en Ingeniería Aeronáutica y del Espacio · Especialidad en Vehículos Aeroespaciales.</span><span class="en">Bachelor's Degree in Aeronautical and Space Engineering · Aerospace Vehicles specialisation.</span></p></article>
+    <article><span>2022 — 2025</span><h3>CFA Institute</h3><p><span class="es">Chartered Financial Analyst (CFA) · Level I y Level II aprobados.</span><span class="en">Chartered Financial Analyst (CFA) · Passed Level I and Level II.</span></p></article>
+    <article><span>2023</span><h3>Financial Edge Training</h3><p>Certificate Course · Financial Accounting Course · Bloomberg Market Concepts.</p></article>
+    <article><span>2023</span><h3>JPMorgan Chase</h3><p>Investment Banking Job Simulation · Forage.</p></article>
+  </div>
+</div></section>
+
+<section id="certificaciones" class="section wrap">
+  <p class="section-label">05 — <span class="es">CERTIFICACIONES</span><span class="en">CERTIFICATIONS</span></p>
+  <div class="cert-row"><strong>CFA</strong><span>Level I &amp; II · 2023–2025</span><em>01</em></div>
+  <div class="cert-row"><strong>Financial Edge</strong><span>Accounting Course · 2023</span><em>02</em></div>
+  <div class="cert-row"><strong>Bloomberg</strong><span>Market Concepts · 2023</span><em>03</em></div>
+  <div class="document-grid">
+    <article class="document-card featured-doc"><span>01 / CFA PROGRAM</span><h3>CFA Program — Level I</h3><p><span class="es">Credencial digital verificada que confirma la superación del CFA Program Level I.</span><span class="en">Verified digital credential confirming successful completion of CFA Program Level I.</span></p><div class="doc-meta"><b>CFA Institute</b><span><span class="es">Credencial verificada</span><span class="en">Verified credential</span></span></div><a class="doc-link" href="https://basno.com/zxylkgmo" target="_blank" rel="noopener"><span class="es">Ver credencial</span><span class="en">View credential</span> ↗</a></article>
+    <article class="document-card"><span>02 / <span class="es">TRABAJO ACADÉMICO</span><span class="en">ACADEMIC RESEARCH</span></span><h3>TFG — Options Strategies</h3><p><span class="es">Trabajo Fin de Grado sobre el análisis y búsqueda de estrategias especulativas competitivas en un mercado de opciones: Black-Scholes, árboles binomiales, simulación Monte Carlo e implementación en Python.</span><span class="en">Final Degree Project on the analysis and search for competitive speculative strategies in an options market, including Black-Scholes, binomial trees, Monte Carlo simulation and Python implementation.</span></p><div class="doc-meta"><b>Universidad Politécnica de Madrid</b><span><span class="es">Junio 2020</span><span class="en">June 2020</span></span></div><a class="doc-link" href="assets/Human_Esmailli_TFG_Options.pdf" target="_blank" rel="noopener"><span class="es">Abrir TFG</span><span class="en">Open TFG</span> ↗</a></article>
+  </div>
+</section>
+
+<section id="habilidades" class="section alt"><div class="wrap skills">
+  <div><p class="section-label">06 — <span class="es">HABILIDADES</span><span class="en">SKILLS</span></p><h2><span class="es">Herramientas.</span><span class="en">Toolkit.</span></h2></div>
+  <div>
+    <div class="skill-group"><h4><span class="es">Programación</span><span class="en">Programming</span></h4>
+      <div class="skill-row"><strong>Python<small>numpy · pandas</small></strong><div class="lvl"><div class="bar"><i style="width:100%"></i></div><em><span class="es">Avanzado</span><span class="en">Advanced</span></em></div></div>
+      <div class="skill-row"><strong>Machine Learning</strong><div class="lvl"><div class="bar"><i style="width:60%"></i></div><em><span class="es">Intermedio</span><span class="en">Intermediate</span></em></div></div>
+      <div class="skill-row"><strong>C#</strong><div class="lvl"><div class="bar"><i style="width:60%"></i></div><em><span class="es">Intermedio</span><span class="en">Intermediate</span></em></div></div>
+      <div class="skill-row"><strong>SQL</strong><div class="lvl"><div class="bar"><i style="width:60%"></i></div><em><span class="es">Intermedio</span><span class="en">Intermediate</span></em></div></div>
+      <div class="skill-row"><strong>VBA</strong><div class="lvl"><div class="bar"><i style="width:60%"></i></div><em><span class="es">Intermedio</span><span class="en">Intermediate</span></em></div></div>
+      <div class="skill-row"><strong>Microsoft Office<small><span class="es">Suite completa</span><span class="en">Complete suite</span></small></strong><div class="lvl"><div class="bar"><i style="width:100%"></i></div><em><span class="es">Avanzado</span><span class="en">Advanced</span></em></div></div>
+    </div>
+    <div class="skill-group"><h4><span class="es">Finanzas cuantitativas</span><span class="en">Quantitative finance</span></h4>
+      <div class="skill-row"><strong><span class="es">Valoración</span><span class="en">Valuation</span></strong><span>Black-Scholes · Monte Carlo · <span class="es">Árboles binomiales</span><span class="en">Binomial trees</span> · Fair value · <span class="es">Ajustes de valoración</span><span class="en">Valuation adjustments</span></span></div>
+      <div class="skill-row"><strong><span class="es">Productos</span><span class="en">Products</span></strong><span>IRS · FX · Commodities · Inflation swaps · Caps/Floors · CCS · <span class="es">Opciones exóticas</span><span class="en">Exotic options</span> · <span class="es">Estructurados</span><span class="en">Structured products</span></span></div>
+      <div class="skill-row"><strong><span class="es">Riesgo</span><span class="en">Risk</span></strong><span>Market risk · Delta · Vega · <span class="es">Escenarios</span><span class="en">Scenarios</span> · VaR · IRC</span></div>
+      <div class="skill-row"><strong>Trading</strong><span><span class="es">Estrategias sistemáticas · Construcción de carteras · Position sizing</span><span class="en">Systematic strategies · Portfolio construction · Position sizing</span></span></div>
+    </div>
+    <div class="skill-group"><h4><span class="es">Idiomas y herramientas</span><span class="en">Languages &amp; tools</span></h4>
+      <div class="skill-row"><strong><span class="es">Inglés</span><span class="en">English</span></strong><div class="lvl"><div class="bar"><i style="width:80%"></i></div><em><span class="es">Avanzado</span><span class="en">Advanced</span></em></div></div>
+      <div class="skill-row"><strong><span class="es">Español</span><span class="en">Spanish</span></strong><div class="lvl"><div class="bar"><i style="width:100%"></i></div><em><span class="es">Nativo</span><span class="en">Native</span></em></div></div>
+      <div class="skill-row"><strong><span class="es">Otras</span><span class="en">Other</span></strong><span>Bloomberg Market Concepts · BatchCal API · PolyPath</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contacto" class="contact-section wrap"><p class="section-label">07 — <span class="es">CONTACTO</span><span class="en">CONTACT</span></p><h2><span class="es">¿Hablamos?</span><span class="en">Let's talk.</span></h2>
+  <p><span class="es">Perfil técnico y financiero con experiencia en valoración de derivados, riesgo de mercado y finanzas cuantitativas.</span><span class="en">Technical and financial profile with experience in derivatives valuation, market risk and quantitative finance.</span></p>
+  <div class="actions"><a class="btn primary" href="mailto:human.esmailli@gmail.com"><span class="es">Escríbeme</span><span class="en">Email me</span> ↗</a><a class="btn linkedin" href="https://www.linkedin.com/in/humanesmailli" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn cv es" href="#" data-cv="es" target="_blank" rel="noopener">📄&nbsp; Ver CV (PDF)</a><a class="btn cv en" href="#" data-cv="en" target="_blank" rel="noopener">📄&nbsp; View CV (PDF)</a></div>
+</section>
+</main>
+<footer class="wrap footer"><span>Human Esmailli Ramos</span><span><span class="es">Portfolio profesional · 2026</span><span class="en">Professional portfolio · 2026</span></span></footer>
+<script>
+(function(){
+ var header=document.querySelector('.topbar .wrap'),nav=header.querySelector('nav');
+ var t=document.createElement('button');t.className='menu-toggle';t.setAttribute('aria-label','Menu');t.textContent='☰';header.appendChild(t);
+ t.addEventListener('click',function(){nav.classList.toggle('open');t.textContent=nav.classList.contains('open')?'✕':'☰';});
+ nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');t.textContent='☰';});});
+ var els=document.querySelectorAll('.section-title,.two-col>div,.project,.timeline article,.cards article,.cert-row,.document-card,.skill-group,.contact-section');
+ els.forEach(function(e){e.classList.add('reveal');});
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}});},{threshold:.08});els.forEach(function(e){io.observe(e);});}
+ else els.forEach(function(e){e.classList.add('visible');});
+ var btns=document.querySelectorAll('.lang button');
+ function setLang(l){document.documentElement.lang=l;btns.forEach(function(b){b.classList.toggle('active',b.textContent.trim().toLowerCase()===l);});try{localStorage.setItem('lang',l);}catch(e){}}
+ btns.forEach(function(b){b.addEventListener('click',function(){setLang(b.textContent.trim().toLowerCase());});});
+ try{if(localStorage.getItem('lang')==='en')setLang('en');}catch(e){}
+ var CV={es:"JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNiAwIFIgL0Y0IDcgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMSAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjIgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago0IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChtYWlsdG86aHVtYW4uZXNtYWlsbGlAZ21haWwuY29tKQo+PiAvQm9yZGVyIFsgMCAwIDAgXSAvUmVjdCBbIDIyLjY3NzE3IDY4OC43NTM5IDExNS42OTM2IDY5OC43NTM5IF0gL1N1YnR5cGUgL0xpbmsgL1R5cGUgL0Fubm90Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vaHVtYW5lc21haWxsaSkKPj4gL0JvcmRlciBbIDAgMCAwIF0gL1JlY3QgWyAyMi42NzcxNyA2NjMuMTUzOSAxMjMuNjEyOCA2NzMuMTUzOSBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1PYmxpcXVlIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMyAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0Jhc2VGb250IC9aYXBmRGluZ2JhdHMgL05hbWUgL0Y0IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKOCAwIG9iago8PAovQW5ub3RzIFsgNCAwIFIgNSAwIFIgXSAvQ29udGVudHMgMTIgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTEgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIAogIC9UcmFucyA8PAoKPj4gL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMSAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9BdXRob3IgKEh1bWFuIEVzbWFpbGxpIFJhbW9zKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYxMDI2MTgxMDEyKzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYxMDI2MTgxMDEyKzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKEN1cnJpY3VsdW0gVml0YWUpIC9UaXRsZSAoSHVtYW4gRXNtYWlsbGkgUmFtb3MgXDIwNCBDVikgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMSAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDggMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMiAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCA0NzgyCj4+CnN0cmVhbQpHYiIvKz4+czlJKDRPVDVrYy9vSlZNcTZlaDwvTDMwajJnJi1IO2BrW3MyV0pgW0h1IiphUWlIXk9GTEM+cUZZYS4pPC4xTDg1SGRlPyhvXzAmTzQ8TyImSzgwMy8mTDkwcywkalA7TzpQYGFXLlRyKUZiZmEvUEBoWWQlOW8uOSRsUFw/WSozaz5iYj8uNUduTSYxKilyI3EpczNNb0ZoZSddZD4+blJOY29CUj9kQlQtVio1Lk1NOCVDJiNnQHViKzZjZGlORm5aNjJfYGEhK1gjIyhsQ1lxO0AzZnQtNTNUNVNEPzorYEI2JW0obksyNzRNcVIrYChXWDhUaFY+JjwkYTF1I0VbUDtvLT03LUtsWlFERjkkQ3Jtblc4c1ZSRl9na0dWO0M2Pihsaz5mYz4wTCZxZFBYWztNSjc4KEFCZEc1OXFvMCxhQWkoOFQ2IkliKE5oamJAWklRK11iIiRgQGtzOUdQKGI/RztLQmBtTEtzQ0hgblYqLSUsNlRaPmBeMEIjQnRQSic9JnQ2NVU2X289JjI5T19vNW4yPnRvMW5lKGYhQEZvTGBqQTVlS1FiWiNqWW5wKTUhcW5TJSdMXDMpRDNERiUnKkpjXD9LRzFuWkVMSz40U0JqVmpKZ19AUiJPdFNNTFNCSzglYXM/O1AwYVdcRyY3ZXU4VidlbUxnI1JAW1lZKV0hYjdXay4uMltpQ3AvcUBucU5NLDpTb3FbN2AjQyxqUlNFQUFFR2wkK1Yobjs6SChCaSE0XV9FWTtJTUdfREopMFcpP3FGSCglQz8yazZEXyMvZixpWi5iZkJCT2E0Jz5IMDBRPDNCJzBNSjxlNChHP2hpJixtVUtJOzJZQklLLCY9YSJQUzEtczcwdGZVPDxKVidJPCZNUFBFaUZKZz1fRmImaj5SU2NvayRETz5sOyVrTXEuRzNhST1uOFJoNWQ2UUU9IUpGM19pMW5XcU5BJ1ciI1BdbDZ1czNRQ2lCPzJUT2JSXE5GRjY5R0RnZEFNKmIjO1osISEjMDoqXE1FMl9uXWUjbEp1a2QtWTtVQ08/WW9pN1dnblBDZVQ3KENvbzYxZG8sVT8iWkgzX1VMJHImaFVrR1RIUSpMMzZWT0JXVHRxLE9YTVhOYWEjcFY7UElJJGpGXDhsMDJTOF4rdSdxZW4lUmhaMCQ2MiNJXE1PNyghTGljZypgXEMuLG4vTF9Ga1FqQlJGKkg9XjQuTyRJJzo+TypcIWJBTC8rPEZ0bWhia2k2SS4xbS4wN2duaDArcFAldTonTW8uZD9TLmcvNEJXbDVbam4uNG5Pb3FxL1k/cCsrdGEqOyFlWF5GIikicyZVa0w1NkFaYUk6OGg9Wi9QRSExYnEkZU1wdXVxUlwidTsuMEZzM0xZaF5RNmRPWitSUThUWFNHQFdfaWJPWFVETyEvZlxGKWk2ZzRANVgkIUpEJ05Va2pcIWAxNzFVUiZoaDsnaiZELllAO2Q6MGk4MV1GZnUrVE8pdClrbCJrYDAqZUw0YWM6L1VVUThLVylJTVtgVmwkPmN0bE4jRF9UP1JVV1VjT3F0IklbNGtMazk9MTBeREQ2SW5rMmFkazlPRT1kL3QiJjlWVyosLSVscGtXa0RNZXJdY0NYPnBdYz5bRT51JFQibShaOzUlJFs1JmtBcilvaF9JZVtCOy1KdWBLX2dPRmVuR0UkXE4jKiZYIiEhTywzSklaTWQvZkEnbDk8JmtscG1qa0Y9MzVuLjNLP2VqTyVWaVBNYklaXEhuTChhQV4wIidSOkUzRl5wYHJcXXFZWDs+QmIvXztZMCJIbypmJD8nKmEpNjBba0leby4+Rik0bzVYcmsjcmhfdD5MUmcnOVRUJTZfMWZVc2VGKEpXcnBnLTxlcl1vWmwoUVhpdDlPUG9cbzMqaVY/KHIsZl45SkJQW2VkOHU4OVBcKkQ8RWpiPiEncCVMaUtDOk43XStvNllRI2RtJiUrJGpGYG5oQyssQVYtKiJ1RV4wTENfTlg8Uz0zY0BRIihHbzthKE8sTmk6MmcwclpxU2FXS2klMSklUnEtRE5TRGxAZ0c3ZVB0LnBGQlM6XFI0YEhjaSVUM206TmMwaTIvJ0w7QU47MVcyJCYnTVxiXV4tOD9MSCxKSlAhNzRGOE0mUShgaFUpKGY5TGBtbCNHb0VHL0luXVpiSURnVSNMWTA6PnFYc3NKb0ElSjxTbXFZcmdxTzpCIU1MZCJYNU4jODMmJj9FZitRTUlmdG0jLDxtZmZCcDVqJUQjLjhvIVplJzAhQmJBVl9PQVZbWCM2K0VmajFrPTtZN1U0JyNtIkVAViNkcTYwVzpqTShAaS5GKSNqKG03YUpgKWljXylQVG9OYidZPUFQLG9LVDgkO2w7QyRwJlZiImRFNGVJQGU6SFk6MHUkLEZmUV5zZWBuJEpKIkdjTD0wJGhZcU9jNCRSOmZKJ2NwIzYmXmAjaVJIJkMtWipZKU1ybEJ0OXFQMiErcSFFYGFSSUM4b1FYOGIyXmhVKmhVQkhMVzY/YFlmUz1lSVcvcC5cLC1pNVtVODJedDBNZ11ZPzlZJHRiJCJlNTZxNF5UZ0NUaCdHNkZGYGA3Q1lBUmgqREcrUkNZTSc1M2tTTWw/NGwtOCZBYlMjVi9JR0AvUFdFUWBNNmIoTi90dUJkazM6QyhyL2RtXGFTT3MjaC8wdVc3RCEyQ003PEtvaSRJPW5yMDFMKy0yYiQ0OlVePmAoTGVSNWRQJCsnZD9RLWQyNEEjLmpEXE9pbTM0NGU3Rm9uW2ghRVhlTElWRU1RcjU7Nz5VLS5QLEg+aSpOXClqLl5JZzJoJCxqMy1NdG9lckE/OClCbCJqSFtjUD9eVCcsbkVxLlAoOjRzQis8YW1uUyg0PzRATm0nWSFpYXRKI08qVC1EQFteUnBKZmhmKj4sXk0+YDJTQyReJTBqV2hGY1ppOWBIMzhELC1ycDtNdDBVS3FnTSg4IzxjWWlPSmc7NUgnN0gzQkNGbVZsLicidGJEOmcsK2FBO0pjWWViT2dqI29UaV01MEg1Yl5hPV41Yyk2M2A8cE5ubiJESl5cO0lQKyFNbV9eVkY1WCZtUk4nTDt1KzEkcjgscGpGJlNjJ3FVUWRqOEFRSiMwMldeclNoN3FPJyY/ZVshLGBGLFsyTnMyTG1xaixnRUEqJ0FVb0dxJFovWjE9alAxbWhMY21HUy06cUlQQkkhVD9OJiooZ3Q/R0s7aEZQOF4zb2drRXAhUUpjIyNlJSQwM2tJPVNXOCs9V25rLU41Uy02TlFib0IubFwnazsmODBGV3FYQW5xYSVvWmRSalNFKlcoUy9HI0dNLGRET1pWZC1xQEpkaT9kQFU6JTYsaytiYSFmbCJebjZxPileQUpCYic7UitgZUstViEmRjIrbG1pKS0yLTlXRUAlRUYqPlpZR3R0MDZrLjFYJltuSkRhISFjKTUlcTtnUWgtTUkvTVVwYmI4JFddNmtaKyFHOCwqZTY4QkYoalBQQEF1dHI+TldpOkxDS1RaMz0jcydHLmQ4P1cpXHU+TDAoUWU4OmQrITtHPDIsTnErREEtWkg2SzZxYCVEInJeb2NtUmM+cDhwLkUwbEpDO140YVNmQ2YlO0xnXGdVZ3I/bihYa08zbyM/XFdhXzonV2UnNzM1W08iOGdEbFs7IUw4Rj9nTiUsVHJlQS0oWlFwTS5oJ0RvPUUmKmlJOWNFKSJqRSo1SiopMDBUbiNtLjclNkJSUGlJb3RKS0lGOEhaTFRpT1JsQjMnMjtAPks2IlhWJ0RzTGYqW3FSQ0A4QVciJWIiXixpUmQ3UHFSU1pyYWUnKStEOjJhUEVncVQhQW9WLC5ITmRyLExmYSMhcT5mcT5SIWxqcSomRFwmYEAkPDZrIlcpUl1zNHBCdEFYckIzPUYzbD4hMFthL19IXD5kJGFuKi1UPmBORVBCSFs8XFxcUDtjbClANDtNTXVJYyZPUTVkMlFGWltYODoqakk4aV0uPjVPYzgoO0lvNFhkNGE/cGNWJ0s7bUx0KHJLO0A8MCdMQjY8SWFAW3QjOCpASTYnTjNXUXBrWl5RND4/b2heNSY7Wz86V0hUVSMqbGcjRTElR3AjQlhLXSQmXmNVOSRlVnAtOltoMmdJXE48KidTXzQyI2BPaVQ2Z2ZGZlxGPURfYChCalYhaSVZZ2phKj5uJ0B1OS86Ri9QbCUhZXBGOz8+JCI1KVdZTk9eK3A7KTI2YiMhNGIqQDtQTmVET0kjJFc0JVpTQChzPCRzOnJ1RVI4WmouLFE5YWV1SG1cR2VGWDIqa1xWVltNSW9NaUolYEhlQF1KbHNIPjlJJkkuOC8pSSkxckIxa3BmP1ZYWzljIzY6aUAsWnBJTXNyWTVrLTNsaTg0W1h1YCNdRkUlcCJWKWcyJD5pWmo6cio+MyU4SEgxN14pLGdiXzZRMS51WWxtKEBOZj1RaiJyPl8pSmhCXWFeSSo8a0JoUSU3TSgpUnBJPSlIJVBYPVxGL0FUS0gsdWVtN2A6ZlVCcm9RXzhrNmlGPitbNnFuXlJvJTdOPjZWZ0YvblxjMmloQ002a103TkwsdUssVjljXTtKcWVwPzkwc2Z1WFIwR3JJJVxKPDVeN1JaaWRLISJDRmFkKTJUMyJqZEttX284W2MvU1U+ZicuczNXaU0mSGgwUVxbRDliQVs7VSFIPU0rV05uWitWbTI8Yy1NXjYtPVc1TGBvPTAxJ0ptdVNrJilMSV5PZz5FJFF0cnVGamBWPlRiaTAnLk08P04kLTQuYzMqPjspW1JDR0kxSmJxTDVXTVRCcSdYZm1pWD42aiFBJl4+WEpCVS1gI0xcZ2BdQl1mRVg+a0hbPnNXXUFHZD04cFFwUWdqa1lyUDRTPFdKZkkxbCs8aXU8LkU0JnFqbjZDXzZGLlY2MzBISic5cCciKz1iZmM7KiYhRHA7cE9YWz45WlFkST03TCsyX19ZLTtpQGZtWShFc0tPOyFLQ3NEWnA9ckoiRTdJazYqRHNycThkOmlDdDRBaUEkLlU+S0JjRl9CKSorXi47YzhfXVxeRWwpOC8pUikvRVtgNSUnOGNWPy4qOEFgcW4kLERgaUNjSWhWTzJiZzQkazZsLnFYQUtQNTIjdDVEKm5MYElUM0tXN2BxK1soM0xRNmNcJjFZUSwmPC9nIiY7OF9TSV0sIiw6Tls2IiEoXj8zXk9KU2NqdE1YdF9BZCJsQ2VZQ3FIaiZMMz9hZEQmKjs+MiEsJkVJPmliNTpiTlJCQClOLk5bInFTPWYhJEBSTWc5Rlk8UT9hclBoMFUiOEg9M0g8SFtmbjxrL0Q6a1NSLCwqK2tQaWFNP0U6cFo7PHQnIWNURXFmQ3J1KzBfYy8vVmdldExyZHQpIWlHYTxmTGU+RCQ5a0lfJ3NSTjxQKCpfcj9mNEpDcidUSklrRD1dJVg3MmNCbEpbdSJcYjVPYTFTanBONT5UUSMiSj87W0xncmFlLzYuLy04SlZ0Yio9SUhvLF9AR0dsdGlqQWZKWDYnXjtkXy41JkBwR3M2b2paK1dAXChdZFdPcDxWPUE/ZT5nTTAwWFBMJ0AxJE9SP1wycWxnX0xsTD9bWWspTjZtPWNsc0c+XSg8YEdmRD5rRD5vRFFEYVddLT1lP0c1YGk0LEdENShvNko0KDtyazRMUWVkSjhxW2MpNWFuZiMlLjd1U0B1TUksWWxtanReN3RcRiEmMDZsNS87Z2xNIStnQ0doQFpKUi46P3QwS2JuQ0NAdFxOZk80XDklc2Q0RFJBVkpgKC8pKjRmaGhCOlJPWUwqTSosKFgtVmBsVy1EWTM6b2trRWBCK19cPkVVWnVpYGNJKGpmMyVHR3BNcHEjODNobyVLaCM3XTdEW2RvciIqMEUsMUliUkc3YmFncWgvU1pEXjhwVy8/W2lWWFI1KXM9YjddSTtbbFElXyReS25XQElaTTNyOWxsNlxPRjA6UT5yPkpBSSYjcFRZRiNgVCNlbV5LQ3BQPk5AZD1abWtrJ2BHdUxAXnJOaFRwZjdLcUNOVFMnTHJdPFNdJEtiZHE2SDpAJGRTPGYhcGQzTm91dC9lamI7S2AkLjIkXmVERUteTkAzb3NvbkchUE4tTnRpO01XZjs3SDNSN243XChaL1M/JFwsRjUxczE9TW1JKUZCR2chUzZaVGFIWVRXbnVyOzcjMjxMLklmSFhPUkJCczZlWF84O1JpNFVpTWRhSVtVMGRzPmJhYFNSVjgrYi87O1xLcExGIyduPlFJK1ArKixIJ2pqQFklcHBeNEtmclI8RTx0PFc3bUImOE5HZjFEVktkcyslQyhmOlI4YCdATT8yVjtYfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMwowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDEyMiAwMDAwMCBuIAowMDAwMDAwMjI5IDAwMDAwIG4gCjAwMDAwMDAzNDEgMDAwMDAgbiAKMDAwMDAwMDUyNCAwMDAwMCBuIAowMDAwMDAwNzE3IDAwMDAwIG4gCjAwMDAwMDA4MzIgMDAwMDAgbiAKMDAwMDAwMDkxNSAwMDAwMCBuIAowMDAwMDAxMTQ0IDAwMDAwIG4gCjAwMDAwMDEyMTMgMDAwMDAgbiAKMDAwMDAwMTUxNyAwMDAwMCBuIAowMDAwMDAxNTc3IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDg3ODAwZjZkYzEyZTE4YzgxMjExMjc2ZTRhODg2Y2RmPjw4NzgwMGY2ZGMxMmUxOGM4MTIxMTI3NmU0YTg4NmNkZj5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gMTAgMCBSCi9Sb290IDkgMCBSCi9TaXplIDEzCj4+CnN0YXJ0eHJlZgo2NDUxCiUlRU9GCg==",en:"JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNiAwIFIgL0Y0IDcgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMSAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjIgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago0IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChtYWlsdG86aHVtYW4uZXNtYWlsbGlAZ21haWwuY29tKQo+PiAvQm9yZGVyIFsgMCAwIDAgXSAvUmVjdCBbIDIyLjY3NzE3IDY4OC43NTM5IDExNS42OTM2IDY5OC43NTM5IF0gL1N1YnR5cGUgL0xpbmsgL1R5cGUgL0Fubm90Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vaHVtYW5lc21haWxsaSkKPj4gL0JvcmRlciBbIDAgMCAwIF0gL1JlY3QgWyAyMi42NzcxNyA2NjMuMTUzOSAxMjMuNjEyOCA2NzMuMTUzOSBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1PYmxpcXVlIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMyAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0Jhc2VGb250IC9aYXBmRGluZ2JhdHMgL05hbWUgL0Y0IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKOCAwIG9iago8PAovQW5ub3RzIFsgNCAwIFIgNSAwIFIgXSAvQ29udGVudHMgMTIgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTEgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIAogIC9UcmFucyA8PAoKPj4gL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMSAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9BdXRob3IgKEh1bWFuIEVzbWFpbGxpIFJhbW9zKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYxMDI2MTgxMDEyKzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYxMDI2MTgxMDEyKzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKEN1cnJpY3VsdW0gVml0YWUpIC9UaXRsZSAoSHVtYW4gRXNtYWlsbGkgUmFtb3MgXDIwNCBDVikgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMSAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDggMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMiAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCA0NjkwCj4+CnN0cmVhbQpHYiIvKz4+czlJKDRPVDVrYzFXOUZmJUUkbGBQTTpAbmFsS0AiTSpmW1lia0VcKlhbMlYhJWtnSWY1a2UvXWVWclRFKi5eKWFZLWEzU2YsWz5lWTkhW2piMjVMUGwtMSUzXig+bydWI0BXZmQrPzpkWnRZci9jbSNEbmBxXz5aNVxROGVmbDRDdDQtUE5oS0MoLGNga3RTQVs8I2dNaHNjUiM0Sjc2UDtrU15WPFgmVShQQS9LKyRbcmAsbl5CWlY/QGZRRDMtQkNETU86Yy1eVzNMUzlzZFEzbFNXOT06PlluW2AyLmU/bUVoWVFIKE0nRHAxNS1NRjM7ZVVIRyE+JjdKZyghQT0zS0BtPTc5VzQzIjJlO0RqXkA9TkY6LGE0KSFfdU0oOXBFQDxvLk9ZUkhTSmpKOFFBRy0uOEAoKVIyJEFxMjJMNypebyEzW0dWNURwXTtZKkhWSWolQWQyPD07UGBTYFZWS244S0A3Sk8iYjltKjtpRSdAKlk/NENcSFUvLFBVUUdEKyotb1hQYkspLC4wQ1E0Ly10Ok4qaWZuZW0kZnJ1XygwLjw1KTFtbm9EaXNQLiVbazlXJXVGaEs5T2VqJC8wWzQjPTp0cl5dUldDaSokbmAvbnIwbWohU1BQSDtpK2YtOiE5ZSxZNkcwODMxcz1mKm8oPzdgITAsaCooI2Q3Yy4iZDMsJD5rNVFAQ2JsWllEJT0haW1vTmUzSD0uOWw0Pzw5NiF0ZiJgJm4mRF08PkskJ2YxXTBFbmcqW25ubEdDKiY+MmE3SjgnaEg2amgzU0lSRkluSSU4bzklJTZmLWk0W2luREI0MzpSN0tyUiw2T29fZl45OlRvSUo6cE02RFtoS1JxOTFfQlxKdSpYZjw0Y1Y+USwlRVc3QmEzKl0rQFM0Vy5FZl0qOEQ5bzsyVkJYNDdFWS1XXE5mKUA2biRrSTdgKGclWWdfMjcnU1VhPiZPKGw/dDZecDtAIXJlPkdJVDdYPiNpZlhtaU9SOCIxUE5mTW8sSkMiSiwmXU9acGxmT0lwXl4/UUBpKmYpK2ZMbXJoNV9mbkVZViZYZ05AOUJicUJBLmRwJFtoMENXbnBqYyhIZ0l0IXNyM3FRREctWFNyPGEyck5qbWo1KypKZD1ccnJkcGQ8dGlWLTRVNFhUVEpJaC5PJE1aT2wrdFA0Rj05Kz1DJSVaWkZydUlgUXF1Ly9bV1AzN0RWXWVDUyJmJTsnUEBQOUVSQVBpV2RlJmVIXiRAK2InUmFpZSczWSdBIzEiR1xLRkFybzJGJyhWSG1cSzxMQ0w4azlDOHJbbWRaZiYlQUBuM0VtQ2ZpYlsobTdJWEFqIjZtZW1pRi1aI2ljTWRTPTUyZW04RWchRihXZipkWE8rNihVRzcmb1EsQU9aRHNbUFo6bS4qM3EoMU9HVCdFblRgSzdDWG04J2syUlpccGlKXFtRcTc3Sm9pXWdZWFNQOkRZYzRXOztscDFXWCQuSyREZm4qSVg7ST9RTztpZEk0PWlQMjs0ZU5eQ1VXQCU7Jyc/NVIlbCcqO0hCV0ZINFIvMFVQP2ljJz9zaHA3QE9bTm9GWmkyPVNBYDJXKWJPLyFONyNkKDIpbFVNKmNFWCVIXW1GKihAc1YmcDQyLDtCWjlCaWlST2JPWzVPLko5czNyOWdZZUdaNDJGSUM8bThAZDd1a24oTShORUdwJG4kPklgS1o9TSFmVCdAZlVoY1s3a09vLCxqO09OXW1gJU0qbWRPUkRDbkZhallzZE4sZitXaCRxS0M5VnRWM2hrZ2kvT3BXa0RQR1xcYVBjLCs+OEowUi11WTVpNWNYIkFkLU5ZLjEpTVhIISZiclgkJ1BlaDltajk3QEwsLCdnLWJZRGVJJls8LiU1OGQjWlNiQ2czXixNJ1duMjNaKTJAR2dZTUZjV2BkYi5ZVGVTWHBvO0pkakVPVnEtcXJzM2opKjFHIUpOV3VeOTpcPyVDPDROOywsbTpJTzBvNHBUKHVOXU8xJyZoNiI5QkFBWjVYaUYqSVYuUVo6I2VZOWgvMWttaTJlMGVyWzo2RlwhTUJrcDgvXmlFT0s7PEttN0FIPEFWTDJYSGtrOUhyYF8zKEYtXCxVZjwqbykvbW0kQ0AyLllbLS1ALzdLRlpeITktSjYmZDViW1E7OFdlLW9YKjJrWHBlV2tRM10yRC1hJmQ1XUAxcFAhOyxncjMzcl0iT3BWMXA8PHRQMCwiOUVJcWRLLyYuRksyOilMSEdfQzdfY1goZ006XUdGMV4wL1dVNi9OWDR0RCNyTkdKWmU/MGRhU05zUnQ+J1wxZmdqXHRdbkFZPDMyKFBQLnJFYi1BY1NdIylsTSVLMnMlRTQlazNBMzZaa0dEW3BnYFAzOlwiPi5IYykzQEhkLzYhZSpWVSYiIytEV29CUShSSWZGM1tdcmI8RmNxW3Q2QT83bmhmcUhxMm1DUzcobU8oak0vTWYuZi9wWnRhZ2JVZWNyK0hgS0NsOE9OMiE7UiEhR1sia0FhYGlGME9TT1JBYzpdUm5DbWhmNz4xK3AiUHAvPF43QmVDTUhdYjM3dCI5VTMnO1k+MkxJYVduSV5UXiEpbTdvTFxRWm47bHRxVjxXXTNZJ1ZqW2E4VkwoL0tmaVgqKlxOTW0raUInPTlkJ2ciPjR0bnIsJ0BdajZeckstYClmNSU8PC8uQj4lUj9uIj8oZDZqVjpTXW9QcUFKVCZmLUlAYXI8SS9bbzMjaDpGNFkiKTtNYVw/RVhfN0RGZiVBJkw5MmZcPyE7LTlqTV0qZk9hPGFuMGgmOEZYYV5FODldRVtDJ0I0QTMjK2dDS1lPVlteNShxaihOXiw/bDxqQW09cEdUKkhAMDJkMU5WQGlINkZrSChpJ2MjOCxdJEVLXW5eLTkzMDxTSyszOC0uYjdgJzBJV2slTk1AYmwsMVZyYDhZVS02TE5eSGk3MGkiPFVjZl9bZD8kZyszUDxvSyEzIzJQR0BtUDlQWy0/bktfXzBqNy9uL11NRzdhaFNPQ2lBNE5sQTZeIlBoPWslPjc+Wko2cV1TKFBVPXBnLiVsMzlJNkdhYEQtL2o6PyNSJUhnKDZIN25sUiNWM2MiOGNPZzRUListTnVINCJlcmBIZWJPTyhvUzQhYTBTRi1Abz8jYiVJNlwodTspUGskRyRgSyxFcS5oVmgoZVQkQTJDcicmTV5YQl5TQT5AIVsqSiluIztSU0VFQVZNa2lUVlo0azYzZjstK1dnJiohRkpBXyUrUiJEaDFnZjdwYTI5MmlWcWIkXlU/YFcnJ0RgUUtDQkshTmgpVE5yTS1YVDIqREhVRTRrdUJ1VU9QZSo/N2NRRFYpM2VDa1A2XSZOP25IVE45dXFrImNgOTUwYWFpQEJdM0ZjK0AzazhIYkg0JE07ZlZPM0hkM1AlZk1xYUA8PDEqbUltPWkhR2JcdSstMDIwOlthIlc4OWg6XCIoUUpJR1wzYjJfMU1cQFYuOGdFYHIzbDRoInQhaDdyLk5TVih1KVFYXWtaWmNZY11MI1VTY1svTE5eLG9pcTMrYiRLVTtiIy5EOyg6YkZiIllfZzghRUBlWCFrVldJYk9CJWhJIilSOzlJTTJQMHEvaDRHYGBodUM6biYhLW9SRCoxWS1mO0ZsXTVUUC43OWViJj1fN0tmRTVyPylvVlU0L1VqRW50RGg8KWpTSGRXVktFTVMiMlJVTmYzNV06Y0dUWUFEKSlZV2FLJXJxXShQTEoxcDNWXVdiZmZSailnZEROaWglIi5jYENcWVFnNUZGTiMlWy9RPWVHdVs0XUs5VjpxZy08OzNeIVw4WC0qYUlcJWVyLzhnPlojbD5BPDdbIzc/XEt0M0YmOnAjPEJIXmliTFtSW2RvQUM3aFFdW288IlNnLy1mTDYuXU4mdVonQ1M6aUNMQnRqOFNpRmxQT191LTwpS0NJVUU/JnFSZFFQZkNlXzNhay1TUUBXMF9IWC5tVU1PcWBTcTpeYXBGOHIxX2lnJklfOz5gTUtyMjwpJGhbSjRGYlRvYGo/UCxyb05SbD9VcXMrVT81YENkOFVpSU5FQC5EJG80ViFFWU8zRiw5bmlKLCpIaWk6MXFkWExcdHBvajpOMWpOJkNxaz1pKTxHXmVRdHMuOzMuUSJjSmVxNGMsV2xlLF0wZC5oST1BJD5ec1dJK1Q8NFgkZSs+IVA/M1o5SSg0LjcsMCpSQDBRb1c7PmBIISEoKVksXHFcX1JXQ1kqLGs7PkNVXj8iajBdOUpIKShRJV02Y0kiLz1XS1xHLUJrLlBXbmNedW5dRiM8cFJLLyc+Z04kPCkva2hGSGleL0RfUFZZW2FicUc3N2BbNXVgXGdvLGU/dT1cU1tyUC5FK2hCPGlTcW5Ea1ZAQD9sM3JnIyNRVGVTMTNiI3IiYSE2RTMrMy9HQzNna0RMTGJxNWA6UU9xWWReTmRTVi1Uc3BnUFlUMDBXZydBUSJyMy1gVzwnU1pnWG9hJEFcXWQyM1JaO2clbD9QWiVCL3JhWU8kW29GVFpzZmFJailMLmpjWi91Iy48RVBeRSFpcV8/QEZcZXEqbCQxRG5Sb05KWCEqNm5aXnA1YWw3TEhTVTpyQy1hNkpyVSlEQnQ4bDpbcj8hTDlaW1cwXTMzUjNGc1g0ISNdUzY4JGVHUjY2Kkw1X1M1MEZacDFqX28sbzlXVDVfRzYiNFE2N0xIL2BiPz9LVUUhS1ZDK0VGIUcpInBRRmVpbExzQ2BfXClsZEY7ZyZRZ2dwW1wtJTxDR250N2ljPDY3cC4oUCJNSGpzWC9wT29tQEgndURnaT0yXUthYzxsTV5JZmIjN2JYJVNcMmopYkZVcSFpRDZrYSxVNSFKRV4tKTxOPHBrVypKMEJvUFtWLGFPTC9NLEJnQFgiRSteK0FkT1ZOQ0xKT0BVK2ctRjNTSzMhIW5IREJBQDcvakxOQmU/QHM4SHQ3WUJFOWAuYTItMUorS2pPVloocD9TY1kxYnQsOFNMbm8wZlVsXHAxVzZWLEVdWXIsIVAjPURGcl5rWVxkUStldW9cZzBMSDMmSys8QFZ1KVw8VCVLbipWUD0nW0coSmdvRltxWD0wbkxZZFApOkZ0QDVmRWxfPDYpST1BJC9VMV9WVlpEai0mKmImckMqUz80TTdNLTBzQWFyX0hKcSdtKDppaGAiOWpOck5yPHMyZlAjNkplYVRtamlwXm4rUjUjJCw3OTphJlYsVVtvWE42NltZW2xfPEpRK0Rjbyw1SlRBY0s2IVRfVmViJDpYSVhtbTAzWikvJUs/YD0zVmQ5b2BbWkg7LU0wMjUyRktTKldTWmEpLVFeKGEkUGA0azxOLCVAQU8takddSUpqOHFFO1VMLUlwIyE0PD1KW1Q8alwmIjQidHNZI2EzXjlBcEZYXiw+YjBVM3RpJk5oVEQlcjhOdG9eMjoiJ1FNUlJDKl0wW143VCRoZE1gLjVNWmBBQyglOm9kVyMxNDs0V0AwSkVWW1RobU0taTpUS2J0NWNuRkZMKj0sXkJMNkA5Kk0xMTl0TkZSVC5wNGA1YGFARHNJXVtQbUZCaFhwYEppJDdxTi9BbDVmK0ooIV4wbGhvU0hkX0ZfSkssNV8oXilALWUnJGtDakFHNzlhV0ZsKkw4KTdbVGVwVEhNOGhnZmRoYz5AL0xbXClRWmlvOEF0KkotLiItWzoubiZmWUFVK3AmXTlDQXBvRyhZWkBENmlOI2RkQWlaQFhHST1UX1knPnFkQ19xLFgmQ1g6ViFNKSdXMSsnL1AjaU1gXGpTZFJSSG0oJG09U3JccDpvKyctaGpXZEFtazNIRj5jPU9oIz4sS3NyLlhpMTVEZEpsS3JaNjZbMStdRCg1XU81cm8sO1VJTl0ramxCciM7VScnVjJLQTwqXm1HI2QpWjFEXkUxKF4mLiZUJFltJSFWST8+UmdEaUMrXlY8MGtEWVxdLDE7JSRbMidEZFhVVTBAOF9OUTYzLnQhMTVCQWFRK2BxPituaiJaOUpGVzk8WSI6cDhJbEtJcDA2JGRqNWdMa04nVFtcXyVJMFwxJnMyMDV1LW5NamJXKUVNdVElcEI/UldeN3VzJkEyMTo2UVdfQ3BGSm0kPERmZGpzQyIxTF10c3MtbVY3OFBmRFgiSlA7YlBKVkdEPjxJSiVSbDJLJz5OSyM6Qzo6IlJcUWdcVl08VywmNWEsdXBFZ1IoT2dyIS9iZ1E2P34+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTMKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMjIgMDAwMDAgbiAKMDAwMDAwMDIyOSAwMDAwMCBuIAowMDAwMDAwMzQxIDAwMDAwIG4gCjAwMDAwMDA1MjQgMDAwMDAgbiAKMDAwMDAwMDcxNyAwMDAwMCBuIAowMDAwMDAwODMyIDAwMDAwIG4gCjAwMDAwMDA5MTUgMDAwMDAgbiAKMDAwMDAwMTE0NCAwMDAwMCBuIAowMDAwMDAxMjEzIDAwMDAwIG4gCjAwMDAwMDE1MTcgMDAwMDAgbiAKMDAwMDAwMTU3NyAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzxhODQyZjRjODc2ODQyOWY5N2YwMDNiNjE5NzIyMGYwYT48YTg0MmY0Yzg3Njg0MjlmOTdmMDAzYjYxOTcyMjBmMGE+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDEwIDAgUgovUm9vdCA5IDAgUgovU2l6ZSAxMwo+PgpzdGFydHhyZWYKNjM1OQolJUVPRgo="};
+ function openCV(l){var b=atob(CV[l]),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);
+  var url=URL.createObjectURL(new Blob([a],{type:'application/pdf'}));var w=window.open(url,'_blank');
+  if(!w){var d=document.createElement('a');d.href=url;d.download='Human_Esmailli_CV_'+l.toUpperCase()+'.pdf';document.body.appendChild(d);d.click();d.remove();}}
+ document.querySelectorAll('[data-cv]').forEach(function(a){a.removeAttribute('target');a.addEventListener('click',function(e){e.preventDefault();openCV(a.dataset.cv);});});
+})();
+
+</script>
+</body></html>
